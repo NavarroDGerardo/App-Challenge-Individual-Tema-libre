@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF4654"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF4654"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101823"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    app:srcCompat="@drawable/astra" />
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Nombre"
+                    android:textAlignment="center"
+                    android:textColor="#FF4654"
+                    android:textSize="30dp"
+                    android:textStyle="italic"></TextView>
+
+                <TextView
+                    android:id="@+id/tipoAgent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Duelista"
+                    android:textAlignment="center"
+                    android:textColor="#FF4654"
+                    android:textSize="15dp"
+                    android:textStyle="italic"></TextView>
+
+                <TextView
+                    android:id="@+id/nacionalidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Nacionalidad"
+                    android:textAlignment="center"
+                    android:textColor="#FF4654"
+                    android:textSize="15dp"
+                    android:textStyle="italic"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

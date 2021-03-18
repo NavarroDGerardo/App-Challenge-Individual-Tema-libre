@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/landingFragment2">
+    <fragment
+        android:id="@+id/landingFragment2"
+        android:name="com.example.examenprimerparcial.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment2_to_agentsFragment"
+            app:destination="@id/agentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agentsFragment"
+        android:name="com.example.examenprimerparcial.AgentsFragment"
+        android:label="fragment_agents"
+        tools:layout="@layout/fragment_agents" >
+        <action
+            android:id="@+id/action_agentsFragment_to_agentDisplayFragment2"
+            app:destination="@id/agentDisplayFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/agentDisplayFragment2"
+        android:name="com.example.examenprimerparcial.AgentDisplayFragment"
+        android:label="fragment_agent_display"
+        tools:layout="@layout/fragment_agent_display" >
+        <argument
+            android:name="agent"
+            app:argType="com.example.examenprimerparcial.Agent" />
+    </fragment>
+</navigation>
